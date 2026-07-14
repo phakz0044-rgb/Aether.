@@ -1,0 +1,68 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition:
+    background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--md {
+  height: 40px;
+  padding: 0 var(--space-5);
+  font-size: var(--fs-sm);
+}
+
+.btn--lg {
+  height: 48px;
+  padding: 0 var(--space-6);
+  font-size: var(--fs-base);
+}
+
+.btn--full {
+  width: 100%;
+}
+
+/* Primary: white fill, the highest-affordance action on a dark surface */
+.btn--primary {
+  background: var(--color-white);
+  color: #0a0a0a;
+}
+
+.btn--primary:hover {
+  background: #e4e4e7;
+}
+
+/* Secondary: outlined, quiet but present */
+.btn--secondary {
+  background: transparent;
+  color: var(--color-text-primary);
+  border-color: var(--color-border-strong);
+}
+
+.btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+/* Ghost: text-only, for tertiary actions */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+}
+
+.btn--ghost:hover {
+  color: var(--color-text-primary);
+  background: rgba(255, 255, 255, 0.04);
+}

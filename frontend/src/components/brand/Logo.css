@@ -1,0 +1,28 @@
+.aether-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  user-select: none;
+}
+
+.aether-logo__mark {
+  flex-shrink: 0;
+}
+
+.aether-logo__word {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+.aether-logo--sm .aether-logo__word {
+  font-size: var(--fs-base);
+}
+
+.aether-logo--md .aether-logo__word {
+  font-size: var(--fs-lg);
+}
+
+.aether-logo--lg .aether-logo__word {
+  font-size: var(--fs-xl);
+}

@@ -1,0 +1,101 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: var(--max-content-width);
+  height: 100%;
+}
+
+.chat__title {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-1);
+}
+
+.chat__subtitle {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}
+
+.chat__panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  gap: var(--space-4);
+  min-height: 480px;
+}
+
+.chat__messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  overflow-y: auto;
+  max-height: 480px;
+  padding-right: var(--space-2);
+}
+
+.chat__hint {
+  color: var(--color-text-tertiary);
+  font-size: var(--fs-sm);
+}
+
+.chat__bubble {
+  max-width: 70%;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+  white-space: pre-wrap;
+}
+
+.chat__bubble--user {
+  align-self: flex-end;
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-accent-border);
+  color: var(--color-text-primary);
+}
+
+.chat__bubble--assistant {
+  align-self: flex-start;
+  background: var(--color-bg-elevated-2);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.chat__bubble--typing {
+  color: var(--color-text-tertiary);
+  font-style: italic;
+}
+
+.chat__error {
+  background: rgba(220, 38, 38, 0.1);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  color: #dc2626;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+}
+
+.chat__form {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.chat__input {
+  flex: 1;
+  background: var(--color-bg-elevated-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-text-primary);
+  font-size: var(--fs-base);
+  font-family: var(--font-sans);
+}
+
+.chat__input:focus {
+  outline: none;
+  border-color: var(--color-accent-border);
+}

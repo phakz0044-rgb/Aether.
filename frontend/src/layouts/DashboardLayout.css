@@ -1,0 +1,17 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.dashboard-layout__main {
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-6) var(--space-7);
+}
+
+@media (max-width: 900px) {
+  .dashboard-layout__main {
+    padding: var(--space-5);
+  }
+}

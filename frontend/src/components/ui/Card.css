@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  transition:
+    border-color var(--duration-base) var(--ease-out),
+    transform var(--duration-base) var(--ease-out);
+}
+
+.card:hover {
+  border-color: var(--color-border-strong);
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.card__title {
+  font-size: var(--fs-base);
+  font-weight: 600;
+}
+
+.card__description {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}
+
+.card__body {
+  flex: 1;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
